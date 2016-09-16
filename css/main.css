@@ -1,0 +1,11 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+#header {
+  color: #6c94be;
+  padding: 10px;
+}
+.panel {
+  margin: 200px;
+}
