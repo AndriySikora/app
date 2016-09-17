@@ -1,6 +1,16 @@
 (function() {
-	var app = angular.module('angular1', ['ui.router', 'angular1.directives.navPanel']);
+	var app = angular.module('angular1', ['ui.router', 'angular1.directives.navPanel', 'angular1.directives.slideMenu']);
 
+	// app.run(function($rootScope) {
+	//     document.addEventListener("keyup", function(e) {
+	//         if (e.keyCode === 27)
+	//             $rootScope.$broadcast("escapePressed", e.target);
+	//     	});
+
+	//     document.addEventListener("click", function(e) {
+	//         $rootScope.$broadcast("documentClicked", e.target);
+	//     	});
+	// 	});
 	app.config(function($stateProvider, $urlRouterProvider) {
 		$urlRouterProvider.otherwise('/');
 
@@ -26,4 +36,5 @@
 			controller: 'contactCtrl'
 		});
 	});
+
 })();
