@@ -1,5 +1,6 @@
 angular
-    .module('angular1.directives.slideMenu')
+    .module('angular1')
     .controller('menuCtrl',['$scope', function($scope) {
-    console.log('controller menuCtrl');
+    console.log('$scope');
+    $scope.visible = true;
 }]);
