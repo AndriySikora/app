@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<html>
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,12 +7,14 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<script type="text/javascript" src="node_modules/angular/angular.min.js"></script>
 	<script type="text/javascript" src="node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
-	<title>Animals</title>
+	<title>Angular project</title>
 </head>
 <body ng-app="angular1">
 <div id="header" class="header">
+<button ng-click="navVisible = !navVisible">Menu</button>
 	Animals(test)
 </div>
+<slide-menu visible = "navVisible" ng-show="navVisible"></slide-menu>
 <nav-panel class="panel"></nav-panel>
 <div id="content" ui-view></div>
 <footer ng-include="'templates/footer.html'"></footer>
@@ -25,5 +26,10 @@
 <script type="text/javascript" src="script/controllers/dogsCtrl.js"></script>
 <script type="text/javascript" src="script/controllers/horsesCtrl.js"></script>
 <script type="text/javascript" src="script/controllers/contactCtrl.js"></script>
+
+<!-- build: js slideMenu directive -->
+<script type="text/javascript" src="script/directives/slideMenu.js"></script>
+<script type="text/javascript" src="script/controllers/menuCtrl.js"></script>
+<!-- <script type="text/javascript" src="script/directives/slideMenuItem.js"></script> -->
 </body>
 </html>
