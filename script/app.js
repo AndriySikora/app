@@ -6,20 +6,20 @@
 	}]);
 
 	app.controller('sideNavController', function($scope, $mdSidenav) {
-             $scope.openLeftMenu = function() {
+            $scope.openLeftMenu = function() {
                $mdSidenav('left').toggle();
-             }
-             $scope.close = function() {
+            }
+            $scope.close = function() {
              	$mdSidenav('left').close();
-             }
-    });	  
-	app.directive('slideMenu', function() {
-			return {
-    			restrict: 'A',
-    			templateUrl: 'templates/menuSlide.html',
-    			controller: 'sideNavController'
-			};
-	});
+            }
+    });	
+    	app.directive('slideMenu', function() {
+		return {
+			restrict: 'A',
+			templateUrl: 'templates/menuSlide.html',
+			controller: 'sideNavController'
+		};
+	});  
 	app.config(function($stateProvider, $urlRouterProvider) {
 			$urlRouterProvider.otherwise('/');
 
@@ -44,5 +44,5 @@
 				templateUrl: 'templates/contact-us.html',
 				controller: 'contactCtrl'
 			});
-		});
+	});
 })();

@@ -3,17 +3,68 @@
   padding: 0;
 }
 #header {
-  color: #5B83AD;
   padding: 10px;
   width: auto;
   height: auto;
-  background-color: orange;
+  background-color: #6c94be;
   font-family: 'Sans serif';
   font-size: 1.2em;
+}
+.container-fullwidth {
+  width: 100%;
+  text-align: center;
 }
 .panel {
   width: auto;
   font-size: 1.2em;
   line-height: 1.2em;
   text-align: center;
+}
+.navbar > ul {
+  width: 100%;
+  text-align: center;
+}
+.form-item {
+  text-align: center;
+  margin: 20px;
+}
+#email {
+  min-width: 33%;
+  height: 30px;
+}
+.message-field {
+  min-width: 33%;
+  height: 150px;
+}
+.sendBtn {
+  margin-left: 305px;
+  min-width: 10%;
+  height: 30px;
+}
+.valid {
+  border: 1px solid green;
+}
+.invalid {
+  border: 1px solid red;
+}
+input.ng-valid.ng-dirty {
+  border: 1px solid green;
+}
+input.ng-invalid.ng-dirty {
+  border: 1px solid red;
+}
+textarea.ng-valid.ng-dirty {
+  border: 1px solid green;
+}
+textarea.ng-invalid.ng-dirty {
+  border: 1px solid red;
+}
+footer {
+  width: 100%;
+  height: 30px;
+  font-family: 'Sans serif';
+  font-size: 1.2em;
+  bottom: 0;
+  position: absolute;
+  background-color: #5B83AD;
 }

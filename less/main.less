@@ -1,22 +1,76 @@
 @nice-blue: #5B83AD;
 @light-blue: @nice-blue + #111;
+@input-width: 33%;
+@font-family: 'Sans serif';
+@font-size: 1.2em;
 *{
 	margin: 0;
 	padding: 0;
 }
 #header{
-	color: @nice-blue;
 	padding: 10px;
 	width: auto;
 	height:auto;
-	background-color: orange;
-	font-family: 'Sans serif';
-	font-size: 1.2em;
+	background-color: @light-blue;
+	font-family: @font-family;
+	font-size: @font-size;
+}
+.container-fullwidth{
+	width: 100%;
+	text-align: center;
 }
 .panel{
 	width: auto;
 	font-size: 1.2em;
 	line-height: 1.2em;
 	text-align: center;
+}
+.navbar > ul{
+	width: 100%;
+	text-align: center;
+}
+.form-item{
+	text-align: center;
+	margin: 20px;
+}
+#email{
+	min-width: 33%;
+	height: 30px;
+}
+.message-field{
+	min-width: 33%;
+	height: 150px;
+}
+.sendBtn{
+	margin-left: 305px;
+	min-width: 10%;
+	height: 30px;
+}
+.valid{
+	border: 1px solid green;
+}
+.invalid{
+	border: 1px solid red;	
+}
+input.ng-valid.ng-dirty{
+	.valid();
+}
+input.ng-invalid.ng-dirty{
+	.invalid();
+}
+textarea.ng-valid.ng-dirty{
+	.valid();
+}
+textarea.ng-invalid.ng-dirty{
+	.invalid();
+}
+footer{
+	width:100%;
+	height: 30px;
+	font-family: @font-family;
+	font-size: @font-size;
+	bottom: 0;
+	position: absolute;
+	background-color: @nice-blue;
 }
 
