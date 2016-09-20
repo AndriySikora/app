@@ -1,7 +1,7 @@
 angular
 	.module('angular1')
 	.controller('contactCtrl', ['$scope', function($scope) {
-
+		
 		$scope.checkEmail = (function(contact) {
 			var regexp = /^[\w\-\.\+]+\@[a-zA-Z0-9\. \-]+\.[a-zA-z0-9]/;
 				return {
@@ -20,4 +20,5 @@ angular
 				}
 			};
 		}
+
 	}]);

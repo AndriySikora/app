@@ -1,4 +1,15 @@
-<h2>{{title}}</h2>
-<ul>
-	<li ng-repeat="horses in items">{{horses}}</li>
-</ul>
+<h2 class="title"><b>{{title}}</b></h2>
+<div class="flex-container container-text">
+	<div class="flex-item top-item-font" ng-repeat="horses in items">{{horses}}</div>
+</div>
+<div class="flex-container container-item">
+	<div class="flex-item">{{andalusian.description}}</br>
+		<p>{{andalusian.origin}}</p>
+	</div>
+	<div class="flex-item">{{barb.description}}</br>
+		<p>{{barb.origin}}</p>
+	</div>
+	<div class="flex-item">{{friesian.description}}</br>
+		<p>{{friesian.origin}}</p>
+	</div>
+</div>

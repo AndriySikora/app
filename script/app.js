@@ -4,16 +4,15 @@
 	app.controller('headerCtrl', ['$scope', function(e){
 		e.headerTitle = 'Animals (test app)';
 	}]);
-
 	app.controller('sideNavController', function($scope, $mdSidenav) {
-            $scope.openLeftMenu = function() {
-               $mdSidenav('left').toggle();
-            }
-            $scope.close = function() {
-             	$mdSidenav('left').close();
-            }
-    });	
-    	app.directive('slideMenu', function() {
+			$scope.openLeftMenu = function() {
+				$mdSidenav('left').toggle();
+			}
+			$scope.close = function() {
+				$mdSidenav('left').close();
+			}
+	});	
+	app.directive('slideMenu', function() {
 		return {
 			restrict: 'A',
 			templateUrl: 'templates/menuSlide.html',
