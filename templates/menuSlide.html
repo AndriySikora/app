@@ -1,14 +1,21 @@
-<ul class="list-group">
-	<li class="list-group-item" ui-sref="cats">
-		<a class="nav-link" ui-sref="cats" href="#/cats">Cats</a>
-	</li>
-	<li class="list-group-item" ui-sref="dogs">
-		<a class="nav-link" ui-sref="dogs" href="#/dogs">Dogs</a>
-	</li>
-	<li class="list-group-item" ui-sref="horses">
-		<a class="nav-link" ui-sref="horses" href="#/horses">Horses</a>
-	</li>
-	<li class="list-group-item" ui-sref="contact-us">
-		<a class="nav-link" ui-sref="contact-us" href="#/contact-us">Contact us</a>
-	</li>
-</ul>
+<div id="sideNavContainer" ng-controller="sideNavController as ctrl" layout="row" ng-cloak>
+	<md-sidenav md-component-id="left" class="md-sidenav-left">
+		<ul class="list-group" ng-click="close()">
+			<li class="list-group-item">
+				<a class="nav-link-slide" href="#cats">Cats</a>
+			</li>
+			<li class="list-group-item">
+				<a class="nav-link-slide" href="#dogs">Dogs</a>
+			</li>
+			<li class="list-group-item">
+				<a class="nav-link-slide" href="#horses">Horses</a>
+			</li>
+			<li class="list-group-item">
+				<a class="nav-link-slide" href="#contact-us">Contact us</a>
+			</li>
+		</ul>
+	</md-sidenav>
+	<md-content>           
+		<md-button ng-click="openLeftMenu()">Menu</md-button>
+	</md-content>
+</div>
